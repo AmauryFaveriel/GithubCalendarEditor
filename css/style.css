@@ -33,3 +33,7 @@
 .Clicked{
   background: red;
 }
+
+.containerAll{
+  display: none;
+}

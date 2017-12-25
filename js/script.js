@@ -1,5 +1,7 @@
 var strbtn=document.querySelector(".startButton");
 strbtn.addEventListener("click", function(){
+  var containerAll=document.querySelector(".containerAll");
+  containerAll.style.display="block";
   var date=document.querySelector(".date input");
   var container=document.querySelector(".calendarContainer");
   container.innerHTML="";
