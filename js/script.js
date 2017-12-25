@@ -14,7 +14,7 @@ strbtn.addEventListener("click", function(){
   var column=container.querySelectorAll(".column");
   for(i=0;i<column.length;i++){
     for(a=0;a<7;a++){
-      column[i].innerHTML+='<div class="dayEmpty" datadate="0"></div>';
+      column[i].innerHTML+='<div class="dayEmpty"></div>';
     }
   }
 
