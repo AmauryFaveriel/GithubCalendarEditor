@@ -1,7 +1,6 @@
 var strbtn=document.querySelector(".startButton");
 strbtn.addEventListener("click", function(){
   var date=document.querySelector(".date input");
-  console.log(moment(date.value).day());
   var container=document.querySelector(".calendarContainer");
   container.innerHTML="";
   for(i=0;i<53;i++){
@@ -37,7 +36,6 @@ strbtn.addEventListener("click", function(){
 
   var endbtn=document.querySelector(".endButton");
   endbtn.addEventListener("click", function(){
-    console.log('CA MARCHE');
     var textContainer=document.querySelector(".textContainer");
     var daysClicked=container.querySelectorAll(".Clicked");
     textContainer.style.display="block";
