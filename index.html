@@ -7,12 +7,19 @@
   <title>Github Calendar Editor</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/fr.js"></script>
 </head>
 <body>
   <h1 class="pageTitle">Bienvenue sur le Github Calendar Editor</h1>
+  <button class="startButton" type="button" name="button">Clique ici pour commencer</button>
+          <div class="date">
+            <input type="date" placeholder="yyyy-mm-dd">
+          </div>
   <section class="calendarContainer"></section>
   <button class="endButton" type="button" name="endButton">Clique ici pour finir</button>
   <button class="resetButton" type="button" name="resetButton">Clique ici pour reset le tableau</button>
+  <div class="textContainer"></div>
   <script src="js/script.js"></script>
 </body>
 </html>
