@@ -1,0 +1,25 @@
+.calendarContainer{
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  width: 624px;
+  padding: 10px 10px;
+}
+
+.column{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 84px;
+  width: 12px;
+}
+
+.day{
+  width: 10px;
+  height: 10px;
+  background: #ebedf0;
+}
+
+.dayClicked{
+  background: red;
+}
