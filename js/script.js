@@ -1,8 +1,11 @@
 var strbtn=document.querySelector(".startButton");
+  var date=document.querySelector(".date input");
+  date.addEventListener("change", function(){
+    strbtn.style.display="block";
+  })
 strbtn.addEventListener("click", function(){
   var containerAll=document.querySelector(".containerAll");
   containerAll.style.display="block";
-  var date=document.querySelector(".date input");
   var container=document.querySelector(".calendarContainer");
   container.innerHTML="";
   for(i=0;i<53;i++){

@@ -1,3 +1,7 @@
+.startButton{
+  display: none;
+}
+
 .calendarContainer{
   display: flex;
   justify-content: space-between;
