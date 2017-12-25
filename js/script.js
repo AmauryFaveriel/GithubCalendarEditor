@@ -38,7 +38,6 @@ strbtn.addEventListener("click", function(){
   endbtn.addEventListener("click", function(){
     var textContainer=document.querySelector(".textContainer");
     var daysClicked=container.querySelectorAll(".Clicked");
-    textContainer.style.display="block";
     textContainer.innerHTML='<h1 class="textTitle">Dates auxquelles faire un commit</h1>'+
     '<ul class="listDate"></ul>';
     var list=textContainer.querySelector(".listDate");
@@ -49,6 +48,8 @@ strbtn.addEventListener("click", function(){
 
   var rstbtn=document.querySelector(".resetButton");
   rstbtn.addEventListener("click", function(){
+    var textContainer=document.querySelector(".textContainer");
+    textContainer.innerHTML="";
     var daysClicked=container.querySelectorAll(".Clicked");
     for(let i=0;i<daysClicked.length;i++){
       daysClicked[i].className="day NotClicked";
