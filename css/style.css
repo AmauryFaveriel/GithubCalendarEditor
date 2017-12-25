@@ -17,9 +17,16 @@
 .day{
   width: 10px;
   height: 10px;
+}
+
+.Empty{
+  background: none;
+}
+
+.NotClicked{
   background: #ebedf0;
 }
 
-.dayClicked{
+.Clicked{
   background: red;
 }
