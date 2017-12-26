@@ -46,11 +46,11 @@ strbtn.addEventListener("click", function() {
     var daysClicked = container.querySelectorAll(".Clicked");
     textContainer.innerHTML = '<h1 class="textTitle">Dates auxquelles faire un commit :</h1>' +
       '<ul class="listDate"></ul>';
-    listID.innerHTML = '<h1 class="listIDItem">Format tableur :</h1>';
+    listID.innerHTML = '<h1 class="listIDTitle">Format tableur :</h1>';
     var list = textContainer.querySelector(".listDate");
     for (let i = 0; i < daysClicked.length; i++) {
       list.innerHTML += '<li class="listDateItem">' + daysClicked[i].title + '</li>';
-      listID.innerHTML += '<li class="listIDTitle">' + daysClicked[i].id + '</li>';
+      listID.innerHTML += '<li class="listIDItem">' + daysClicked[i].id + '</li>';
     }
   })
 
