@@ -46,10 +46,11 @@ button {
   display: none;
 }
 
-.textContainer{
+.textContainer {
   float: left;
 }
-.listIDContainer{
+
+.listIDContainer {
   float: right;
   margin-right: 20%;
 }

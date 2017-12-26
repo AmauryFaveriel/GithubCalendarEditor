@@ -46,7 +46,7 @@ strbtn.addEventListener("click", function() {
     var daysClicked = container.querySelectorAll(".Clicked");
     textContainer.innerHTML = '<h1 class="textTitle">Dates auxquelles faire un commit :</h1>' +
       '<ul class="listDate"></ul>';
-      listID.innerHTML = '<h1 class="listIDItem">Format tableur :</h1>';
+    listID.innerHTML = '<h1 class="listIDItem">Format tableur :</h1>';
     var list = textContainer.querySelector(".listDate");
     for (let i = 0; i < daysClicked.length; i++) {
       list.innerHTML += '<li class="listDateItem">' + daysClicked[i].title + '</li>';
@@ -57,7 +57,9 @@ strbtn.addEventListener("click", function() {
   var rstbtn = document.querySelector(".resetButton");
   rstbtn.addEventListener("click", function() {
     var textContainer = document.querySelector(".textContainer");
+    var listID = document.querySelector(".listIDContainer");
     textContainer.innerHTML = "";
+    listID.innerHTML = "";
     var daysClicked = container.querySelectorAll(".Clicked");
     for (let i = 0; i < daysClicked.length; i++) {
       daysClicked[i].className = "day NotClicked";
