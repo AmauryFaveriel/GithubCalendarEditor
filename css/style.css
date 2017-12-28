@@ -1,8 +1,23 @@
-.startButton{
+body{
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.pageTitle{
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.startButton {
   display: none;
 }
 
-.calendarContainer{
+.calendarContainer {
   display: flex;
   justify-content: space-between;
   background: none;
@@ -10,7 +25,7 @@
   padding: 10px 10px;
 }
 
-.column{
+.column {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -18,26 +33,35 @@
   width: 12px;
 }
 
-.day{
+.day {
   width: 10px;
   height: 10px;
   cursor: pointer;
 }
 
-.dayEmpty{
+.dayEmpty {
   background: none;
   width: 10px;
   height: 10px;
 }
 
-.NotClicked{
+.NotClicked {
   background: #ebedf0;
 }
 
-.Clicked{
+.Clicked {
   background: red;
 }
 
-.containerAll{
+.containerAll {
   display: none;
+}
+
+.textContainer {
+  float: left;
+}
+
+.listIDContainer {
+  float: right;
+  margin-right: 20%;
 }
