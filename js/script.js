@@ -39,11 +39,11 @@ strbtn.addEventListener("click", function() {
     })
   }
 
-  var inputDate=document.querySelector(".inputDate input");
-  inputDate.addEventListener("change", function(){
-    for(let i=0;i<days.length;i++){
-      if(days[i].id===moment(inputDate.value).format("MM/DD/YYYY")){
-        days[i].className="day Clicked";
+  var inputDate = document.querySelector(".inputDate input");
+  inputDate.addEventListener("change", function() {
+    for (let i = 0; i < days.length; i++) {
+      if (days[i].id === moment(inputDate.value).format("MM/DD/YYYY")) {
+        days[i].className = "day Clicked";
       }
     }
   })
@@ -71,6 +71,7 @@ strbtn.addEventListener("click", function() {
     var listID = document.querySelector(".listIDContainer");
     textContainer.innerHTML = "";
     listID.innerHTML = "";
+    inputDate.value = date.value;
     var daysClicked = container.querySelectorAll(".Clicked");
     for (let i = 0; i < daysClicked.length; i++) {
       daysClicked[i].className = "day NotClicked";
