@@ -39,6 +39,15 @@ strbtn.addEventListener("click", function() {
     })
   }
 
+  var inputDate=document.querySelector(".inputDate input");
+  inputDate.addEventListener("change", function(){
+    for(let i=0;i<days.length;i++){
+      if(days[i].id===moment(inputDate.value).format("MM/DD/YYYY")){
+        days[i].className="day Clicked";
+      }
+    }
+  })
+
   var endbtn = document.querySelector(".endButton");
   endbtn.addEventListener("click", function() {
     var textContainer = document.querySelector(".textContainer");
