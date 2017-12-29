@@ -3,6 +3,10 @@ var date = document.querySelector(".date input");
 date.addEventListener("change", function() {
   strbtn.style.display = "block";
 })
+document.querySelector(".todayDateButton").addEventListener("click", function(){
+  date.value=moment(date).format("YYYY-MM-DD");
+  strbtn.style.display = "block";
+})
 strbtn.addEventListener("click", function() {
   var containerAll = document.querySelector(".containerAll");
   containerAll.style.display = "block";
@@ -19,7 +23,7 @@ strbtn.addEventListener("click", function() {
   }
 
   var start = moment(date.value).day() % 7;
-  var end = 365 + start;
+  var end = 366 + start;
 
   var daysEmpty = container.querySelectorAll(".dayEmpty");
   for (let i = start; i < end; i++) {
