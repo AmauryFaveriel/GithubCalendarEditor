@@ -3,8 +3,8 @@ var date = document.querySelector(".date input");
 date.addEventListener("change", function() {
   strbtn.style.display = "block";
 })
-document.querySelector(".todayDateButton").addEventListener("click", function(){
-  date.value=moment(date).format("YYYY-MM-DD");
+document.querySelector(".todayDateButton").addEventListener("click", function() {
+  date.value = moment().format("YYYY-MM-DD");
   strbtn.style.display = "block";
 })
 strbtn.addEventListener("click", function() {
