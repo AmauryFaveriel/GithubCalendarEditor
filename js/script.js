@@ -11,9 +11,9 @@ strbtn.addEventListener("click", function() {
   var container = sectionCreate();
   caseCreate(container);
   var days = clickDay(container);
-  var input=inputDate(days);
+  var dateInput=inputDate(days);
   end(container);
-  reset(container, input, date);
+  reset(container, dateInput, date);
 
 
 
