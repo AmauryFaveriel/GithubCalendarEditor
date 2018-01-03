@@ -8,6 +8,22 @@ document.querySelector(".todayDateButton").addEventListener("click", function() 
   strbtn.style.display = "block";
 })
 strbtn.addEventListener("click", function() {
+  var container = sectionCreate();
+  caseCreate(container);
+  var days = clickDay(container);
+  var input=inputDate(days);
+  end(container);
+  reset(container, input, date);
+
+
+
+
+
+
+
+})
+
+function sectionCreate(){
   var containerAll = document.querySelector(".containerAll");
   containerAll.style.display = "block";
   var container = document.querySelector(".calendarContainer");
@@ -21,7 +37,10 @@ strbtn.addEventListener("click", function() {
       column[i].innerHTML += '<div class="dayEmpty"></div>';
     }
   }
+  return container;
+}
 
+function caseCreate(container){
   var start = moment(date.value).day() % 7;
   var end = 366 + start;
 
@@ -31,7 +50,9 @@ strbtn.addEventListener("click", function() {
     daysEmpty[i].title = (moment(date.value).add((i - start), 'day').format("dddd Do MMMM YYYY"));
     daysEmpty[i].id = (moment(date.value).add((i - start), 'day').format("MM/DD/YYYY"));
   }
+}
 
+function clickDay(container){
   var days = container.querySelectorAll(".day");
   for (let i = 0; i < days.length; i++) {
     days[i].addEventListener("click", function() {
@@ -42,7 +63,10 @@ strbtn.addEventListener("click", function() {
       }
     })
   }
+  return days;
+}
 
+function inputDate(days){
   var inputDate = document.querySelector(".inputDate input");
   inputDate.addEventListener("change", function() {
     for (let i = 0; i < days.length; i++) {
@@ -51,7 +75,10 @@ strbtn.addEventListener("click", function() {
       }
     }
   })
+  return inputDate;
+}
 
+function end(container){
   var endbtn = document.querySelector(".endButton");
   endbtn.addEventListener("click", function() {
     var textContainer = document.querySelector(".textContainer");
@@ -68,7 +95,9 @@ strbtn.addEventListener("click", function() {
       listID.innerHTML += '<li class="listIDItem">' + daysClicked[i].id + '</li>';
     }
   })
+}
 
+function reset(container, inputDate, date){
   var rstbtn = document.querySelector(".resetButton");
   rstbtn.addEventListener("click", function() {
     var textContainer = document.querySelector(".textContainer");
@@ -81,4 +110,4 @@ strbtn.addEventListener("click", function() {
       daysClicked[i].className = "day NotClicked";
     }
   })
-})
+}
