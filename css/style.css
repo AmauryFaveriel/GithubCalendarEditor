@@ -4,7 +4,62 @@
   background: none;
   width: 624px;
   padding: 10px 10px;
+
 }
+.pageTitle{
+  color: red;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Comic sans MS';
+  margin-top: 3rem;
+
+}
+.startButton{
+  padding: 10px 10px 10px;
+  margin: 2rem 2rem 2rem;
+  border-radius:2px;
+}
+.date{
+  padding: 10px 10px 10px;
+  margin: 0rem 2rem 2rem;
+  border-radius:2px;
+
+}
+
+
+.endButton{
+
+  border:none;
+  padding:6px 0 6px 0;
+  border-radius:75%;
+  border-bottom:7px solid red;
+  font:bold 13px Arial;
+  color:#555;
+  background:#fff;
+  box-shadow:2px 2px 3px #999;
+  border-top:2px solid blue;
+  margin: 0 2rem 2rem;
+
+}
+.resetButton{
+
+  border:none;
+  padding:6px 0 6px 0;
+  border-radius:75%;
+  border-bottom:7px solid red;
+  font:bold 13px Arial;
+  color:#555;
+  background:#fff;
+  box-shadow:2px 2px 3px #999;
+  border-top:2px solid blue;
+
+}
+
+
+
+
+
+
 
 .column{
   display: flex;
@@ -15,8 +70,8 @@
 }
 
 .day{
-  width: 10px;
-  height: 10px;
+  width: 100px;
+  height: 100px;
   cursor: pointer;
 }
 
