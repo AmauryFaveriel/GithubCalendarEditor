@@ -1,3 +1,4 @@
+
 .calendarContainer{
   display: flex;
   justify-content: space-between;
@@ -91,4 +92,72 @@
 
 .textContainer{
   display: none;
+}
+
+body{
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.pageTitle{
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.startButton {
+  display: none;
+}
+
+.calendarContainer {
+  display: flex;
+  justify-content: space-between;
+  background: none;
+  width: 624px;
+  padding: 10px 10px;
+}
+
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 84px;
+  width: 12px;
+}
+
+.day {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.dayEmpty {
+  background: none;
+  width: 10px;
+  height: 10px;
+}
+
+.NotClicked {
+  background: #ebedf0;
+}
+
+.Clicked {
+  background: red;
+}
+
+.containerAll {
+  display: none;
+}
+
+.textContainer {
+  float: left;
+}
+
+.listIDContainer {
+  float: right;
+  margin-right: 20%;
 }
