@@ -1,29 +1,3 @@
-//Pour le texte clignotant
-var blink_speed = 500;
-var t = setInterval(function() {
-  var ele = document.querySelector('.pageTitle');
-  ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
-}, blink_speed);
-
-var blink_speed = 500;
-var t = setInterval(function() {
-  var ele = document.querySelector('.resetButton');
-  ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
-}, blink_speed);
-var blink_speed = 500;
-var t = setInterval(function() {
-  var ele = document.querySelector('.endButton');
-  ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
-}, blink_speed);
-
-
-
-
-
-
-
-
-
 var strbtn = document.querySelector(".startButton");
 var date = document.querySelector(".date input");
 date.addEventListener("change", function() {
