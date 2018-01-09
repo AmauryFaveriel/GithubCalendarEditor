@@ -1,3 +1,29 @@
+//Pour le texte clignotant
+var blink_speed = 500;
+var t = setInterval(function() {
+  var ele = document.querySelector('.pageTitle');
+  ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+}, blink_speed);
+
+var blink_speed = 500;
+var t = setInterval(function() {
+  var ele = document.querySelector('.resetButton');
+  ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+}, blink_speed);
+var blink_speed = 500;
+var t = setInterval(function() {
+  var ele = document.querySelector('.endButton');
+  ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+}, blink_speed);
+
+
+
+
+
+
+
+
+
 var strbtn = document.querySelector(".startButton");
 var date = document.querySelector(".date input");
 date.addEventListener("change", function() {
@@ -11,12 +37,12 @@ strbtn.addEventListener("click", function() {
   var container = sectionCreate();
   caseCreate(container);
   var days = clickDay(container);
-  var dateInput=inputDate(days);
+  var dateInput = inputDate(days);
   end(container);
   reset(container, dateInput, date);
 })
 
-function sectionCreate(){
+function sectionCreate() {
   var containerAll = document.querySelector(".containerAll");
   containerAll.style.display = "block";
   var container = document.querySelector(".calendarContainer");
@@ -33,7 +59,7 @@ function sectionCreate(){
   return container;
 }
 
-function caseCreate(container){
+function caseCreate(container) {
   var start = moment(date.value).day() % 7;
   var end = 366 + start;
 
@@ -45,7 +71,7 @@ function caseCreate(container){
   }
 }
 
-function clickDay(container){
+function clickDay(container) {
   var days = container.querySelectorAll(".day");
   for (let i = 0; i < days.length; i++) {
     days[i].addEventListener("click", function() {
@@ -59,7 +85,7 @@ function clickDay(container){
   return days;
 }
 
-function inputDate(days){
+function inputDate(days) {
   var inputDate = document.querySelector(".inputDate input");
   inputDate.addEventListener("change", function() {
     for (let i = 0; i < days.length; i++) {
@@ -71,7 +97,7 @@ function inputDate(days){
   return inputDate;
 }
 
-function end(container){
+function end(container) {
   var endbtn = document.querySelector(".endButton");
   endbtn.addEventListener("click", function() {
     var textContainer = document.querySelector(".textContainer");
@@ -90,7 +116,7 @@ function end(container){
   })
 }
 
-function reset(container, inputDate, date){
+function reset(container, inputDate, date) {
   var rstbtn = document.querySelector(".resetButton");
   rstbtn.addEventListener("click", function() {
     var textContainer = document.querySelector(".textContainer");
