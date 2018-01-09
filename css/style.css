@@ -12,6 +12,15 @@ button {
   font-weight: bold;
   margin-bottom: 15px;
 }
+.devise{
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: 'Comic Sans MS';
+  color: cyan;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
 
 .startButton {
   display: none;
