@@ -65,6 +65,32 @@ button {
 }
 
 
+.listIDTitle{
+  color: blue;
+  font-size: 16px;
+  font-family: 'Comic sans MS';
+  text-decoration: uppercase;
+}
+
+.listIDitem{
+  color: red;
+  font-size: 16px;
+  font-family: 'Comic sans MS';
+  text-decoration: uppercase;
+}
+.textTitle{
+  color: #DB0073;
+  font-size: 16px;
+  font-family: 'Comic sans MS';
+  text-decoration: uppercase;
+}
+.listDateItem{
+  color: red;
+  font-size: 16px;
+  font-family: 'Comic sans MS';
+  text-decoration: uppercase;
+}
+
 
 .calendarContainer {
   display: flex;
@@ -83,8 +109,8 @@ button {
 }
 
 .day {
-  width: 10px;
-  height: 10px;
+  width: 100px;
+  height: 100px;
   cursor: pointer;
 }
 
